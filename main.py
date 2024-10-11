@@ -3,15 +3,13 @@ import random
 
 def main():
     total = 0
-    numbers = [0] * 5
-    for i in range(5):
-        while True:
-            numbers[i] = random.randint(0,100)
-            break
-
-        print(numbers[i], end = ' ')
-        total += numbers[i]
-    print(total)
+    numbers = []
+    while total <= 100:
+            num = random.randint(0,100)
+            numbers.append(num)
+            print(num, end =' ')
+            total += num
+    print(f"\nTotal sum: {total}")
 
     ########################################
     # Do not delete the return statement
